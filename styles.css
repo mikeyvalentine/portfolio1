@@ -1,0 +1,226 @@
+@font-face{
+    font-family: 'auth';
+    src: url('auth.otf');
+}
+@font-face{
+    font-family: 'sq';
+    src: url('square.otf');
+}
+@font-face{
+    font-family: 'lib';
+    src: url('l;ib.ttf');
+}
+*, html{
+    margin: none;
+    padding: none;
+}
+body{
+    background-color: #f5f5f5;
+    cursor: crosshair;
+}
+#logodiv{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 100;
+}
+.navbar{
+    font-family: 'auth';
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.navbar a{
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+    transition: all .3s;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color:#add8e6;
+    transform: scaleX(1.2);
+}
+#email:hover{
+    box-shadow: 0px 0px 20px rgb(178, 235, 178);
+}
+#email{
+    background-color:rgb(178, 235, 178);
+    border: 2px solid rgb(178, 235, 178);
+    box-shadow: 0px 0px 10px rgb(178, 235, 178);
+}
+#port{
+    background-color:rgb(245, 206, 255);
+    border: 2px solid rgb(245, 206, 255);
+    box-shadow: 0px 0px 10px rgb(245, 206, 255);
+}
+#port:hover{
+    box-shadow: 0px 0px 20px rgb(245, 206, 255);
+}
+#one a{
+    background-color: #eee8aa;
+    border: 2px solid #eee8aa;
+    box-shadow: 0px 0px 10px #eee8aa;
+}
+#one a:hover{
+    box-shadow: 0px 0px 20px #eee8aa;
+}
+#menu{
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: auto;
+    top: 24vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 500px;
+    width:70vw;
+}
+#menuitem{
+    text-align: center;
+}
+#menuitem video{
+    margin: 10px;
+    max-width: 470px;
+    width: 70vw;
+    box-shadow: 0px 1px 10px grey;
+    transition: .3s all;
+    border-radius: 5px;
+}
+#menuitem img{
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 470px;
+    width: 70vw;
+    height: 70vw;
+    max-height: 470px;
+    box-shadow: 0px 1px 10px grey;
+    transition: .3s all
+}
+#menu video:hover{
+    box-shadow: 0px 0px 200px yellowgreen;
+    border-radius: 50px;
+    transform: scale(1.05);
+}
+#menu img:hover{
+    transform: scale(1.05);
+    border-radius: 50px;
+    box-shadow: 0px 0px 200px yellowgreen;
+}
+h1{
+    font-family: 'auth';
+    font-weight: 400;
+    text-align: center;
+    font-size: 1em;
+    margin: 50px;
+}
+canvas {
+    visibility: hidden;
+    z-index: -100;
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+  }
+#display{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#displayitem{
+    transition: .3s all;
+
+}
+#link{
+    font-weight: bold;
+    color: black;
+}
+#link:hover{
+    text-shadow: 0px 0px 5px #7fff00;
+    color: #7fff00;
+    cursor: pointer;
+}
+#display video, #display img{
+    width: 70vw;
+    max-width: 750px;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+}
+#text{
+    width: 70vw;
+    max-width: 800px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+#cred{
+    margin-top: 100px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    color: grey;
+}
+#cred a{
+    color: grey;
+}
+#scroller{
+    text-align: center;
+    padding: none;
+    font-size: 2em;
+    font-weight: bold;
+    transition: all .3s;
+    margin-bottom: 100px;
+}
+#scroller:hover{
+    transform: scaleY(1.5);
+    cursor: pointer;
+}
+span{
+    font-weight: bold;
+    font-size: .75em;
+    transition: all .3s;
+}
+span:hover{
+    text-shadow: 0px 0px 5px #7fff00;
+    color: #7fff00;
+    cursor: pointer;
+}
+@media (max-device-width:500px){
+      .navbar a{
+          font-size: 4em;
+      }
+      #scroller{
+          font-size: 3em;
+      }
+      #menu{
+        top: 15vh;
+      }
+      #text{
+          font-size: 3em;
+      }
+      h1{
+            font-size: 2em;
+      }
+      #cred{
+          font-size: 1.5em;
+      }
+  }
